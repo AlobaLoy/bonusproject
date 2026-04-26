@@ -9,6 +9,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:text="@string/label_calculate_for"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/solveForSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/calculation_options"
+            android:paddingBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/finalAmount"
+            android:hint="@string/hint_final_amount"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
         <EditText
             android:id="@+id/principal"
             android:hint="@string/hint_principal"
